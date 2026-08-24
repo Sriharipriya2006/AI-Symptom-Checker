@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Navigation */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.navbar h2 {
+  color: #2563eb;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Hero */
+
+ .hero-section {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #6b7280;
+}
+
+.primary-button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.primary-button:hover {
+  background-color: #1d4ed8;
+}
+
+.disclaimer {
+  margin-top: 25px;
+  font-size: 13px !important;
+}
+
+/* How It Works */
+
+.how-it-works {
+  padding: 60px 8%;
+  text-align: center;
+  background-color: white;
+}
+
+.how-it-works h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step {
+  max-width: 280px;
+  padding: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+}
+
+.step h3 {
+  margin-bottom: 15px;
+}
+
+.step p {
+  color: #6b7280;
+  line-height: 1.5;
+}
