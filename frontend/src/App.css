@@ -121,3 +121,151 @@ body {
   color: #6b7280;
   line-height: 1.5;
 }
+
+/* Symptom Checker */
+
+.symptom-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.symptom-container {
+  width: 100%;
+  max-width: 700px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.symptom-container h1 {
+  margin-bottom: 15px;
+}
+
+.symptom-container p {
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.symptom-container textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.symptom-container textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.symptom-container button {
+  padding: 13px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.symptom-container button:hover {
+  background-color: #1d4ed8;
+}
+.error-message {
+  color: #dc2626 !important;
+  font-size: 14px !important;
+  margin-bottom: 15px !important;
+}
+.symptom-container button:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Analysis Result */
+
+.result-card {
+  margin-top: 35px;
+  padding: 30px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.result-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.result-item {
+  margin-bottom: 20px;
+}
+
+.result-item h3 {
+  margin-bottom: 5px;
+}
+
+.result-item p {
+  color: #6b7280;
+}
+
+.warning {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff7ed;
+}
+
+.warning h3 {
+  margin-bottom: 8px;
+}
+
+.warning p {
+  color: #92400e;
+}
+
+.symptom-container label {
+  display: block;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.symptom-container select,
+.symptom-container input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+}
+
+.symptom-container select:focus,
+.symptom-container input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.symptom-container select,
+.symptom-container input {
+  color: #1f2937;
+  background-color: white;
+}
+
+.symptom-container select option {
+  color: #1f2937;
+  background-color: white;
+}
+.symptom-container input {
+  color: #1f2937;
+  background-color: white;
+}
