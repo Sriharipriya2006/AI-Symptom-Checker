@@ -79,18 +79,29 @@ if (emergencyDetected) {
 
   console.log('Symptom Data:', symptomData)
 
-  setTimeout(() => {
-
-    setResult({
-      condition: 'Possible Viral Infection',
-      urgency: 'Self-care recommended',
-      advice: 'Rest, stay hydrated, and monitor your symptoms.',
-      warning: 'If symptoms become severe or worsen, seek medical attention.'
-    })
-     setLoading(false)
-
-
-  }, 2000)
+  fetch('http://localhost:5000/api/analyze', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    symptoms,
+    duration,
+    severity,
+    temperature,
+    additionalInfo
+  })
+})
+  .then((response) => response.json())
+  .then((data) => {
+    setResult(data)
+    setLoading(false)
+  })
+  .catch((error) => {
+    console.error('Error:', error)
+    setError('Unable to connect to the backend.')
+    setLoading(false)
+  })
 }
 
     return (
